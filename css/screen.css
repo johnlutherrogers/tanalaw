@@ -34,24 +34,41 @@ ul.nav.navbar-nav li a {
 .logo {
     float: right;
     margin-right: 5px;
-    margin-top: 20px;
-    width: 125px;
+    margin-top: 70px;
+    width: 150px;
     color: red;
     /*border: 1px solid red;*/
-    padding: 10px 5px;
+    padding: 5px 5px;
 }
 .title {
-    margin-top: 40px;
+    margin-top: 70px;
+    font-family: Copperplate, "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 @media screen and (max-width: 970px) {
     .title {
         clear: both;
     }
 }
-.title h1 {
-    /*font-family: "Copperplate Gothic";*/
-    font-size: 32px;
-    font-family: Copperplate, "Helvetica Neue",Helvetica,Arial,sans-serif;;
+.advertisement {
+    position: absolute;
+    right: -50px;
+    width: 110%;
+    padding: 5px 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    /*letter-spacing: 0px;*/
+}
+.title .name {
+    font-size: 28px;
+    margin: 0 20px;
+    line-height: 25px;
+}
+.title .site-name {
+    font-size: 22px;
+    margin: 0 20px;
+    line-height: 25px;
 }
 .dark-bg {
     background-color: #000;
@@ -59,7 +76,7 @@ ul.nav.navbar-nav li a {
 }
 
 .full-height {
-    min-height: 620px;
+    min-height: 640px;
 }
 
 .text-right-upper {
@@ -70,10 +87,7 @@ ul.nav.navbar-nav li a {
     color: #fff;
 }
 .title-block {
-    min-height: 120px;
-}
-.title-block .title {
-    margin-top: 60px;
+    min-height: 135px;
 }
 
 .text-right-bottom {
@@ -232,16 +246,28 @@ table .sep-row {
     width: 200px;
     margin: 10px auto;
 }
+.mwca-container .caption {
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .mwca-container {
+        float: none !important;
+    }
+}
 
 /* Contact page */
 
 .contact-link-block {
     font-size: 30px;
-    height: 130px;
+    height: 180px;
 }
 .contact-link-block a {
     margin-top: 30px;
     color: #fff;
+}
+.contact-link-block a h1 {
+    padding-top: 15px;
 }
 .contact-avatar-container {
     margin: 300px auto 0 auto;
@@ -249,6 +275,11 @@ table .sep-row {
 }
 .contact-avatar-container img {
     width: 200px;
+}
+@media screen and (max-width: 768px) {
+    .contact-link-block {
+        height: 100px;
+    }
 }
 @media screen and (min-width: 750px) {
     .contact-avatar-container img {
